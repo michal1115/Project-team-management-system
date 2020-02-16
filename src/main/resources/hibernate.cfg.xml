@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQL55Dialect</property>
+        <property name="connection.url">jdbc:mysql://remotemysql.com:3306/aJkWuy6Z56</property>
+        <property name="connection.username">aJkWuy6Z56</property>
+        <property name="connection.password">[password]</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="pl.edu.agh.projectTeamManagementSystem.model.Critic"/>
+        <mapping class="pl.edu.agh.projectTeamManagementSystem.model.Project"/>
+        <mapping class="pl.edu.agh.projectTeamManagementSystem.model.ProjectGroup"/>
+        <mapping class="pl.edu.agh.projectTeamManagementSystem.model.Rating"/>
+        <mapping class="pl.edu.agh.projectTeamManagementSystem.model.Participant"/>
+        <mapping class="pl.edu.agh.projectTeamManagementSystem.model.Task"/>
+    </session-factory>
+</hibernate-configuration>

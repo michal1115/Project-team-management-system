@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+javafx {
+    version = "12"
+    modules = [ 'javafx.controls', 'javafx.graphics', "javafx.fxml" ]
+}
+
+mainClassName = "gastromanager/pl.edu.agh.gastronomiastosowana.Main"
+
+group 'pl.edu.agh.gastronomiastosowana'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.hibernate:hibernate-core:5.4.9.Final'
+    implementation 'mysql:mysql-connector-java:5.1.6'
+    compile group: 'javax.mail', name: 'mail', version: '1.4.1'
+}
